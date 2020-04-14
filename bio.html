@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies... Dang!</title>
+</head>
+
+<body>
+  <h1>Me Love Cookies!</h1>
+  <h3>(and occasionally milk))</h3>
+  <p>I like cookies. Not nasty cookies - good cookies. Don't present me with any nasty cookies.
+  </p>
+  <p>Here is a button:
+  </p>
+  <button onclick="myFunction()">COOKIE BUTTON</button>
+  <p></p>
+    
+  <p>Click the button! Click it!</p>
+
+  <div id="myDIV">
+      <img src="https://media.giphy.com/media/xT0xeMA62E1XIlup68/giphy.gif" alt="Cookie Monster Going to TOWN">  
+  </div>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+         
+</body>
+
+</html>

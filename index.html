@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First HTML</title>
+  <title>Cookies... Dang!</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <h1>Hello H1</h1>
-  <h2>Hello H2</h2>
-  <h3>Hello H3</h3>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum reprehenderit doloremque pariatur eius modi saepe commodi, maxime soluta hic libero aliquid mollitia expedita dolorem amet obcaecati totam inventore aspernatur at.</p>
-  <input type="text" name="" id="">
-  <button>BUTTON!</button>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="HTML logo">
+  <div class="headers">
+    <h1>Me Love Cookies!</h1>
+  </div>
+  <h3>(and occasionally milk)</h3>
+  <br>
+  <p>Me love cookies. Not nasty cookies - good cookies. Don't present me with any nasty cookies.
+  </p>
+  <p>Here is a button:
+  </p>
+  <button onclick="myFunction()">COOKIE BUTTON</button>
+  <br>
+    
+  <p>Click the button! Click it!
+  </p>
+
+  <div id="myDIV">
+      <img src="https://media.giphy.com/media/xT0xeMA62E1XIlup68/giphy.gif" alt="Cookie Monster Going to TOWN">  
+  </div>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <h2>Want to send me cookies? <a href=./contact.html>Click here</a> for my contact info.
+  </h2>     
 </body>
+
 </html>
